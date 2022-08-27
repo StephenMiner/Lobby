@@ -1,0 +1,15 @@
+name: Lobby
+version: 1.0
+main: me.stephenminer.lobby.Lobby
+api-version: 1.13
+authors: [ Meep, Stephenminer ]
+description: Sets a central lobby for a group of worlds
+commands:
+  lobby:
+    permission: lobby.commands.lobbycmd
+    permission-message: 'You do not have permission to use this command!'
+    description: "teleports you to the server's set lobby"
+  setLobby:
+    permission: lobby.commands.setlobby
+    permission-message: 'You do not have permission to use this command!'
+    description: 'cmd to set the server lobby'
