@@ -1,6 +1,7 @@
 package me.stephenminer.lobby;
 
 import me.stephenminer.lobby.commands.LobbyCmd;
+import me.stephenminer.lobby.commands.ReloadLobbyCmd;
 import me.stephenminer.lobby.commands.SetLobbyCmd;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -26,6 +27,7 @@ public final class Lobby extends JavaPlugin {
     private void registerCommands(){
         getCommand("lobby").setExecutor(new LobbyCmd(this));
         getCommand("setLobby").setExecutor(new SetLobbyCmd(this));
+        getCommand("reloadLobby").setExecutor(new ReloadLobbyCmd(this));
     }
 
     public String fromLoc(Location loc){

@@ -13,3 +13,7 @@ commands:
     permission: lobby.commands.setlobby
     permission-message: 'You do not have permission to use this command!'
     description: 'cmd to set the server lobby'
+  reloadLobby:
+    permission: lobby.commands.reloadlobby
+    permission-message: 'You do not have permission to use this command!'
+    description: 'reloads any manual changes you made to the config file'

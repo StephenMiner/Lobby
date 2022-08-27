@@ -18,6 +18,7 @@ public class SetLobbyCmd implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
         if (sender instanceof Player player){
             plugin.getConfig().set("lobby-spawn", plugin.fromLoc(player.getLocation()));
+            plugin.saveConfig();
             player.sendMessage(ChatColor.GREEN + "Set the new server lobby!");
             return true;
         }else sender.sendMessage(ChatColor.RED + "Only players can use this command!");
